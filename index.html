@@ -15,12 +15,33 @@
       margin: auto;
       padding: 20px;
     }
-    img {
+
+    /* Imagen con zoom al pasar el mouse */
+    .zoom-img {
       width: 100%;
       max-width: 600px;
       border-radius: 8px;
       margin-top: 10px;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
     }
+    .zoom-img:hover {
+      transform: scale(1.5);
+      z-index: 10;
+      position: relative;
+    }
+
+    /* Imagen fija */
+    .fixed-img {
+      position: fixed;
+      top: 20px; /* distancia desde la parte superior */
+      right: 20px; /* distancia desde la derecha */
+      width: 150px; /* tamaño fijo */
+      border-radius: 8px;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
     iframe {
       width: 100%;
       height: 450px;
@@ -28,6 +49,7 @@
       border-radius: 8px;
       margin-top: 10px;
     }
+
     span.contacto {
       color: #003366;
       font-size: 1em;
@@ -63,11 +85,21 @@
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.123456!2d-83.123456!3d12.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f1234567890abcdef%3A0xabcdef1234567890!2sLa%20Bocana%2C%20Puerto%20Cabezas!5e0!3m2!1ses!2sni!4v1699999999999!5m2!1ses!2sni" 
     allowfullscreen="" 
     loading="lazy"
-    referrerpolicy="no-referrer-when-downg
-  
-  <h3>Ideal para continuar construcción o remodelación. </h3>
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <!-- Imagen de referencia con zoom -->
+  <img src="https://raw.githubusercontent.com/bertharamirez/mis-imagenes/main/Maps%20location.jpeg" 
+       alt="Mapa de ubicación del terreno"
+       class="zoom-img">
+
+  <h3>Ideal para continuar construcción o remodelación.</h3>
+
+  <!-- Imagen fija -->
   <img src="https://raw.githubusercontent.com/bertharamirez/mis-imagenes/main/Cocal.png" 
-  alt="Construcción de dos plantas">
+       alt="Construcción de dos plantas"
+       class="fixed-img">
 
 </body>
 </html>
+
