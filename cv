@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="icon"
+        type="image/png"
+        href="https://raw.githubusercontent.com/bertharamirez/Favicon/main/favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Imagen con zoom al pasar el mouse */
+    .zoom-img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      margin-top: 10px;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+    .zoom-img:hover {
+      transform: scale(1.5);
+      z-index: 10;
+      position: relative;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    span.contacto {
+      color: #003366;
+      font-size: 1em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Excelente trabajadora</h1>
+
+  <!-- Detalles de Ella  -->
+  <div>
+    <p><strong>Propiedad:</strong> Terreno de 120 x 160 m y casa de dos plantas de 25 x 25 Pies.</p>
+    
+  </div>
+
+  <!-- Link al Google Maps original -->
+  <p>
+    mmmm
+  </p>
+
+
+  <h3>Ideal para continuar construcción o remodelación.</h3>
+
+</body>
+</html>
